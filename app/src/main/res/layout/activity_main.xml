@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/signuptitle"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
@@ -87,20 +87,46 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repassword"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp" />
+    </RadioGroup>
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signupbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/repassword"
+        android:layout_above="@id/info"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="65dp"
         android:backgroundTint="@color/cyan"
         android:text="Sign Up"
         android:textColor="@color/black"
-        android:textSize="24dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
