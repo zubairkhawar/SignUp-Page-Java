@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.text.TextUtils;
+import android.content.Intent;
 
 import com.google.android.material.button.MaterialButton;
 
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 Toast.makeText(MainActivity.this, "Registration Successful for " + usernameStr, Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
             }
         });
     }
